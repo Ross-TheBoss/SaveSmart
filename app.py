@@ -2,7 +2,7 @@ import base64
 from datetime import datetime
 from google import genai
 from google.genai import types
-client = genai.Client(api_key="AIzaSyBPlLN0RvHJQlCB8mBFVzE0aHCQlX_HFVg")
+client = genai.Client(api_key="keu")
 
 import PIL.Image
 
