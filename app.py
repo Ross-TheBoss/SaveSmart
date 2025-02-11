@@ -11,7 +11,9 @@ from datetime import datetime
 
 from models import User, SavingsGoal, Contribution, Cart, Item, db
 
-genai.configure(api_key="AIzaSyBPlLN0RvHJQlCB8mBFVzE0aHCQlX_HFVg")
+API_KEY = os.getenv("API_KEY")
+genai.configure(api_key=API_KEY)
+
 client = genai.GenerativeModel('gemini-2.0-flash')
 
 # Initialize Flask app
